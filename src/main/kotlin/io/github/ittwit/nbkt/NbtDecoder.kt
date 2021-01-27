@@ -56,7 +56,7 @@ private class NbtCompoundDecoder(
     serializersModule: SerializersModule = EmptySerializersModule
 ) : NbtDecoder(input, serializersModule) {
     init {
-        if (rootTag) println(input.readUTF())
+        if (rootTag) input.readUTF()
     }
 
     override fun decodeByte() = input.readByte()

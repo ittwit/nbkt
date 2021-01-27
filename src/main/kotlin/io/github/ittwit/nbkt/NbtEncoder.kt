@@ -158,7 +158,6 @@ private class NbtCompoundEncoder(
 
     init {
         if (rootName != null) {
-            println("writing root name + id")
             output.tryWriteTypeId(+NbtType.COMPOUND)
             output.tryWriteElementName(rootName)
         }
